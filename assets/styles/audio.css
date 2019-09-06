@@ -1,0 +1,300 @@
+
+html, body, div, span, h1, p, a, ol, li, audio {
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+ol {
+  box-sizing: border-box;
+  list-style: none;
+  background-color: white;
+  opacity: .8;
+  padding: 10px 0 0 0;
+  margin-left: 15px;
+  
+}
+ol li {
+  margin: 0;
+  list-style: decimal outside;
+}
+* {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+
+  height: 100%;
+}
+body {
+  padding: 5px 0;
+ /*background-image:url(bright-clouds-cold-618833.jpg);*/
+   background-size: 100% 200%;
+  background-position:center;
+  background-position: fixed;
+  font: 20px/24px 'Helvetica', 'Arial', sans-serif;
+  color: #eee;
+}
+/* << reset */
+
+/* page style */
+.page {
+	background-image:url(Assets/images/cool.jpg);
+  position: relative;
+  margin: 0 auto;
+  width: 70%;
+  min-width: 300px;
+  max-width: 700px;
+}
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Audio Player */
+.player-wrap {
+  position: relative;
+  margin: 0 0 1em;
+  padding: 0;
+   background-image:url(Assets/bgs/earbuds-earphones-google-play-music-39592.jpg);
+  background-size: cover;
+  background-position:center;
+ 
+}
+.player-wrap.enabled {
+  padding-bottom: 4em;
+}
+.player-wrap .button {
+  float: left;
+  display: block;
+  margin: 1.5em 2em;
+  width: 5em;
+  height: 5em;
+   /*background-image:url(Assets/images/cool.jpg);
+  background-size: 100% 100%;
+  background-position:center;
+  background-attachment:fixed;*/
+
+  background-color: transparent;
+  line-height: 5em;
+  text-align: center;
+  border-radius: 50%;
+}
+.player-wrap .button:hover {
+  background-color: #fff;
+  opacity: .5;
+  cursor: pointer;
+}
+.player-wrap.enabled .button {
+  display: block;
+}
+.player-wrap .info {
+  margin-left: 10em;
+}
+.player-wrap h1 {
+  padding: 1.5em 0;
+}
+.player-wrap .action {
+  font-style: italic;
+}
+
+.player-wrap .player {
+  position: absolute;
+  display: none;
+  left: 0;
+  bottom: 0;
+  padding: 3px 1em 0 6em;
+  margin-bottom: .5em;
+  width: 100%;
+  height: 1em;
+  background-color: transparent;
+  font-size: 2em;
+  box-sizing: border-box;
+}
+.player-wrap.enabled .player {
+  display: block;
+}
+.player-wrap .player svg {
+  margin: .25em;
+  width: .5em;
+  height: .5em;
+  fill: #eee;
+}
+.player-wrap .player div {
+  display: block;
+  height: 1em;
+  width: auto;
+}
+.player-wrap audio,
+.player-wrap .player .pause {
+  display: none;
+}
+.player-wrap .playpause, .player-wrap .timer,
+.player-wrap .prev, .player-wrap .next {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  height: 1.22em;
+  line-height: 1em;
+  vertical-align: center;
+  text-align: center;
+}
+.player-wrap .playpause,
+.player-wrap .prev, .player-wrap .next {
+  width: 1.3em;
+  cursor: pointer;
+}
+.player-wrap .playpause {
+  left: 1em;
+}
+.player-wrap .next {
+  left: auto;
+  right: 0;
+}
+.player-wrap .playpause:hover,
+.player-wrap .prev:hover, .player-wrap .next:hover {
+  background-color: transparent;
+}
+.player-wrap .playpause, .player-wrap .play, .player-wrap .pause,
+.player-wrap .prev::-moz-focus-inner,
+.player-wrap .next::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.player-wrap .timer {
+  left: 2em;
+  width: 4em;
+  top: 3px;
+}
+.player-wrap .timer div {
+  display: inline-block;
+  height: 100%;
+  vertical-align: top;
+  font-size: .45em;
+}
+.player-wrap .seek {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 95%;
+  height: 100%;
+}
+.playlist-wrap {
+  background-color: transparent;
+  position: absolute; 
+  top: 0px; 
+  height: 260px; 
+  max-height: 420px; 
+  overflow-y: scroll; 
+  overflow-x: hidden; 
+  position: absolute; 
+  left: 560px; 
+
+
+}
+.playlist-wrap li {
+  margin: 0 0 0 3em;
+  padding: .25em 0 .25em .5em;
+  list-style: decimal outside;
+}
+.playlist-wrap li.sel {
+  /*background-color: transparent;*/
+}
+.playlist-wrap li:hover {
+  background-color: #2ee0ff;
+}
+
+/* >> input[type=range] class: seek */
+input.seek[type=range] {
+  box-sizing: border-box;
+  background-color: transparent;
+  vertical-align: top;
+  font-size: 1em;
+  -webkit-appearance: none;
+}
+input.seek[type=range]:focus {
+  outline: none;
+}
+input.seek[type=range]::-webkit-slider-runnable-track {
+  box-sizing: border-box;
+  width: 98%;
+  height: .17em;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: .1em;
+  transition: all .2s ease;
+
+}
+input.seek[type=range]::-webkit-slider-thumb {
+  box-sizing: border-box;
+  width: .5em;
+  height: .5em;
+  margin-top: -.19em;
+  border-radius: 50%;
+  background-color: #eee;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+input.seek[type=range]:focus::-webkit-slider-runnable-track {
+  background-color: #eee;
+}
+input.seek[type=range]::-moz-range-track {
+  box-sizing: border-box;
+  border: 0 solid #eee;
+  width: 98%;
+  height: .17em;
+  background-color: #eee;
+  cursor: pointer;
+  border-radius: .1em;
+  transition: all .2s ease;
+}
+input.seek[type=range]::-moz-range-thumb {
+  box-sizing: border-box;
+  border: 0 solid #eee;
+  width: .5em;
+  height: .5em;
+  margin-top: -.19em;
+  border-radius: 50%;
+  background-color: #eee;
+  cursor: pointer;
+}
+input.seek[type=range]::-ms-track {
+  box-sizing: border-box;
+  border: 0 none;
+  width: 98%;
+  height: .17em;
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+input.seek[type=range]::-ms-fill-lower {
+  background-color: #eee;
+  border-radius: .1em;
+}
+input.seek[type=range]::-ms-fill-upper {
+  background-color: #eee;
+  border-radius: .1em;
+}
+input.seek[type=range]::-ms-thumb {
+  box-sizing: border-box;
+  width: .5em;
+  height: .5em;
+  margin-top: -.19em;
+  border-radius: 50%;
+  background-color: #eee;
+  cursor: pointer;
+}
+input.seek[type=range]:focus::-ms-fill-lower {
+  background-color: #eee;
+}
+input.seek[type=range]:focus::-ms-fill-upper {
+  background-color: #eee;
+}
+/* << input[type=range] class: seek */

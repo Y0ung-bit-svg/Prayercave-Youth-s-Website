@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai|Gugi|Just+Another+Hand|Shadows+Into+Light|Yeon+Sung');
+font-family: 'Gugi', cursive;
+font-family: 'Baloo Bhai', cursive;
+font-family: 'Just Another Hand', cursive;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Yeon Sung', cursive;
+
+.funky4{
+	font-family: 'Baloo Bhai', cursive;
+	font-weight: 200;
+  }
+	  
+	  .icon1{
+		  width: 45px;
+		  height: auto;
+	  }
+
+	.funky2{
+font-family: 'Yeon Sung', cursive;
+
+}
+
+	.mbr-iconfont{
+font-size: 24px;
+}
+	
+.downTown p, .downTown a{
+  color: white;
+  font-family: 'Baloo Bhai', cursive;
+  }
+.downTown ul li:hover {
+  color: 149dcc;
+} 
+.downTown p{
+  font-size: small;
+}
+
+      .funky3{font-family: 'Dosis', sans-serif; font-size: 1em;
+}
+
+    	.funky2{
+	font-family: 'Yeon Sung', cursive;
+	font-size: 1.2em;
+}
+
+      .mbr-iconfont{
+  font-size: 24px;
+}
+      
+  .downTown p, .downTown a{
+    color: white;
+    font-family: 'Baloo Bhai', cursive;
+    }
+  .downTown ul li:hover {
+    color: 149dcc;
+  } 
+  .downTown p{
+    font-size: small;
+  }
+
+
+  #rain{align-self: center; }
+
+  #cloud{
+  -moz-transform: matrix(1.9,0,0,1.9,70,35);
+  -webkit-transform: matrix(1.9,0,0,1.9,70,35);
+  transform: matrix(1.4,0,0,1.4,70,35);
+  }
+  #showers{
+  -moz-transform: matrix(1.3,0,0,1.2,75,-60);
+  -webkit-transform: matrix(1.3,0,0,1.2,75,-60);
+  transform: matrix(1.3,0,0,1.2,75,-63);
+
+  position:relative;
+  top:125px;
+  left:-10px;
+  }
+
+  @-webkit-keyframes driz{
+  0%{opacity:1;}
+  100%{opacity:0;}
+  }
+  .drops-1{
+  animation-name:driz;
+  animation-duration:1s;
+  animation-iteration-count: infinite;
+  }
+  .drops-2{
+  animation-name:driz;
+  animation-duration:1s;
+  animation-delay:.2s;
+  animation-iteration-count: infinite;
+  }
+  .drops-3{
+  animation-name:driz;
+  animation-duration:1s;
+  animation-delay:.4s;
+  animation-iteration-count: infinite;
+  }
+  @-webkit-keyframes rain{
+  0%{
+  transform: scaleY(.4);
+  -moz-transform:scaleY(.4);
+  -webkit-transform:scaleY(.4);
+  }
+
+  100%{
+  transform: scaleY(.9);
+  -moz-transform:scaleY(.9);
+  -webkit-transform:scaleY(.9);
+   }
+  }
+
+  .rain-1{
+  animation-name:rain;
+  animation-duration:.9s;
+  animation-direction:alternate;
+  animation-timing-function:ease;
+  animation-iteration-count: infinite;
+  }
+  .rain-2{
+  animation-name:rain;
+  animation-duration:.7s;
+  animation-direction:alternate;
+  animation-timing-function:ease;
+  animation-iteration-count: infinite;
+  }
+  .rain-3{
+  animation-name:rain;
+  animation-duration:.5s;
+  animation-direction:alternate;
+  animation-timing-function:ease;
+  animation-iteration-count: infinite;
+  }
+
+  #cloud, #showers{ width: 100%; }
+
+
+
+.funky3{font-family: 'Dosis', sans-serif;
+}
+html{
+	max-width: 100vw;
+	overflow-x: hidden;
+}
+.funky2{
+	font-family: 'Yeon Sung', cursive;
+	
+}
+.name{border-radius: 15px;}
+ .nav-link ul li a{
+ 	background-color: #fff;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Gugi', cursive;
+  }
+
+  .verses{
+  	color: #fff;
+  }
+
+.verses, .funky{
+	font-family: 'Gugi', cursive;
+	
+}
+.item-1 { box-sizing: content-box; }
+.item-1 h1{
+	margin: 0;
+	padding: auto -20px;
+	width: 100vw;
+  color: #fff;
+  background-color: #000;
+  opacity: .7;
+}
+
+.item-1 .push {
+	text-align: right;
+    
+}
+.item-1 .push .blk{
+	padding-right: 50px;
+}
+
+	.item-1 .line{ margin: 20px 0; }
+
+
+	.item-4 .col-12 .snip1204{
+float: left;
+ background-attachment: fixed;
+	}
+.wofc{ border-radius: 25px; }
+.WOFC{
+		border-radius: 50%; 
+	}
+
+	.item-5 .WOFC .welcome{
+		position: absolute;
+		bottom: 30vh;
+		margin-top: 400px;
+	}
+
+	.text-right{
+		margin-right: 30px;
+	}
+
+	.play4 ol{
+		border-bottom-right-radius: 25px;
+		border-bottom-left-radius: 25px;
+	}
+
+	.name{
+		background-color: white; padding: 4px 10px; opacity: .8; font-size: 1.3em;
+	}
+
+	.ttl{
+		font-size: 1.2em;
+		
+		background-color: white;
+
+	}
+
+
+
+	.testimonials-wrapper {
+	 
+	  border-radius: 3px;
+	  padding: 25px;
+	  width: 33%;
+	  font-family: tahoma;
+	  margin: 40px auto;
+	  .fa {
+	    font-size: 28px;
+	    margin-right: 8px;
+	  }
+	  p {
+	    margin: 0 0 15px 0;
+	  }
+	  .details-wrapper {
+	    .user-img {
+	      display: inline-block;
+	      vertical-align: middle;
+	      margin-right: 15px;
+	      img {
+	        height: 80px;
+	        width: 80px;
+	        border-radius: 50%;
+	      }
+	    }
+	    .user-details {
+	    display: inline-block;
+	    vertical-align: middle;
+	      h3 {
+	        margin: 0 0 3px 0;
+	        font-size: 16px;
+	      }
+	      h4 {
+	        margin: 0;
+	        font-size: 14px;
+	        color :#777;
+	        font-weight: normal;
+	      }
+	    }
+	  }
+	  
+	}
+
+
+
+	 .user-img img{
+	   border-radius: 50%;
+	 }
+	.testimonials-wrapper {
+	  border: 2px solid #fff;
+	  border-radius: 15px;
+	  padding: 25px;
+	  width: 33%;
+	  font-family: tahoma;
+	  margin: 40px auto;
+	  .fa {
+	    font-size: 28px;
+	    margin-right: 8px;
+	  }
+	  p {
+	    margin: 0 0 15px 0;
+	  }
+	  .details-wrapper {
+	    .user-img {
+	      display: inline-block;
+	      vertical-align: middle;
+	      margin-right: 15px;
+	      img {
+	        height: 80px;
+	        width: 80px;
+	        border-radius: 50%;
+	      }
+	    }
+	    .user-details {
+	    display: inline-block;
+	    vertical-align: middle;
+	      h3 {
+	        margin: 0 0 3px 0;
+	        font-size: 16px;
+	      }
+	      h4 {
+	        margin: 0;
+	        font-size: 14px;
+	        color :#777;
+	        font-weight: normal;
+	      }
+	    }
+	  }
+	  
+	}
